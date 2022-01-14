@@ -3,7 +3,6 @@ body {
 }
 
 .topBar {
-  background-color: cadetblue;
   padding: 10px 100px;
   color: black;
   text-decoration: none;
@@ -26,6 +25,15 @@ body {
   text-decoration: none;
   justify-content: center;
   padding: 12px;
+}
+
+.topBarMenus:hover {
+  color: white;
+  background-color: #e02c6d;
+  text-decoration: none;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 10px;
 }
 
 .section1 {
