@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+.topBar {
+  background-color: cadetblue;
+  padding: 10px 100px;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+}
+
+.topBarMenuDiv {
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.topBarMenus {
+  color: black;
+  text-decoration: none;
+  justify-content: center;
+  padding: 12px;
+}
