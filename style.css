@@ -252,38 +252,44 @@ footer {
     padding: 10px 20px;
     border-radius: 20px;
     font-family: 'Poppins', sans-serif;
-    font-size: 0.5em;
+    font-size: 0.6em;
     color: white;
     border: none;
     margin-bottom: 50px;
   }
 
+  .buttonStyle:hover {
+    background-color: #e02c6d;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.65em;
+    color: white;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
   .section1 {
     display: grid;
-    padding: 50px;
+    padding: 10px 100px;
     flex-direction: column;
+    justify-content: center;
   }
   .section1Image {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     border: #e02c6d solid 3px;
-    margin-right: 350px;
-    padding-right: 50px;
-    height: 350px;
-    width: 350px;
   }
   .section1Text {
     font-family: 'Poppins', sans-serif;
     font-size: 1em;
-    margin-right: 200px;
   }
 
   #section1Paragraph {
     font-family: 'Poppins', sans-serif;
     font-size: 0.8em;
     font-weight: 600;
-    padding-right: 250px;
   }
 
   .logoSection {
