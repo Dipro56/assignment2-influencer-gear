@@ -60,7 +60,9 @@ body {
 
 #section1Paragraph {
   font-family: 'Poppins', sans-serif;
-  font-size: 0.45em;
+  font-size: 0.5em;
+  font-weight: 600;
+  padding-right: 100px;
 }
 
 .buttonStyle {
@@ -85,12 +87,17 @@ body {
 }
 
 .logoSection {
-  padding: 10px;
-  display: flex;
-  justify-content: space-evenly;
+  padding: 10px 100px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  /* display: flex; */
+  /* justify-content: space-evenly; */
   border-top: rgba(167, 164, 164, 0.479) solid 1px;
   border-bottom: rgba(167, 164, 164, 0.479) solid 1px;
   margin: 0px 100px;
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: repeat(7, 1fr);
 }
 
 .popularSection {
@@ -133,6 +140,10 @@ body {
   font-size: 0.8em;
 }
 
+.seeMore:hover {
+  font-size: 1em;
+}
+
 footer {
   left: 0;
   bottom: 0;
@@ -145,6 +156,8 @@ footer {
   font: 1.5em sans-serif;
   font-weight: bold;
   padding: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 #footSmallText {
@@ -159,6 +172,7 @@ footer {
 
 .creativeSection {
   padding: 10px 100px;
+
   color: black;
   display: flex;
   justify-content: center;
@@ -216,4 +230,238 @@ footer {
   font-size: 1.3em;
   color: #e02c6d;
   font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .topBar {
+    padding: 10px 50px;
+    color: black;
+    background-color: #e02c6d;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  .topBarMenuDiv {
+    display: none;
+  }
+
+  .buttonStyle {
+    background-color: #e02c6d;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.5em;
+    color: white;
+    border: none;
+    margin-bottom: 50px;
+  }
+
+  .section1 {
+    display: grid;
+    padding: 50px;
+    flex-direction: column;
+  }
+  .section1Image {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: #e02c6d solid 3px;
+  }
+
+  .logoSection {
+    padding: 10px 100px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    border-top: rgba(167, 164, 164, 0.479) solid 1px;
+    border-bottom: rgba(167, 164, 164, 0.479) solid 1px;
+    margin: 0px 100px;
+    margin-left: 100px;
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .imgLogo {
+    padding: 10px;
+  }
+  .popularSection {
+    padding: 10px 50px;
+    color: black;
+    text-decoration: none;
+    display: grid;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+
+  .creativeSection {
+    padding: 10px 50px;
+
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  #creativeSectionTitle {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .discountSection {
+    padding: 10px 100px;
+    color: black;
+    text-decoration: none;
+    display: grid;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+
+  footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(21, 18, 36);
+    color: white;
+    text-align: center;
+    height: 150px;
+    font-family: 'Poppins', sans-serif;
+    font: 1.5em sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1200px) {
+  .topBar {
+    padding: 10px 100px;
+    color: black;
+    background-color: #e02c6d;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  .topBarMenuDiv {
+    display: none;
+  }
+
+  .buttonStyle {
+    background-color: #e02c6d;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.5em;
+    color: white;
+    border: none;
+    margin-bottom: 50px;
+  }
+
+  .section1 {
+    display: flex;
+    padding: 100px;
+    flex-direction: column;
+  }
+
+  .section1Image {
+    display: flex;
+    justify-content: center;
+    border: #e02c6d solid 3px;
+  }
+
+  .logoSection {
+    padding: 10px 100px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    border-top: rgba(167, 164, 164, 0.479) solid 1px;
+    border-bottom: rgba(167, 164, 164, 0.479) solid 1px;
+    margin: 0px 100px;
+    margin-left: 100px;
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+  }
+  .imgLogo {
+    padding: 10px;
+  }
+  .popularSection {
+    padding: 10px 100px;
+    color: black;
+    text-decoration: none;
+    display: grid;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  .creativeSection {
+    padding: 10px 100px;
+
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  #creativeSectionTitle {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+
+  .discountSection {
+    padding: 10px 100px;
+    color: black;
+    text-decoration: none;
+    display: grid;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(21, 18, 36);
+    color: white;
+    text-align: center;
+    height: 150px;
+    font-family: 'Poppins', sans-serif;
+    font: 1.5em sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
 }
