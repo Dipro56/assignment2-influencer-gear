@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  width: 100%;
 }
 
 .topBar {
@@ -147,7 +148,6 @@ body {
 footer {
   left: 0;
   bottom: 0;
-  width: 100%;
   background-color: rgb(21, 18, 36);
   color: white;
   text-align: center;
