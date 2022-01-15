@@ -269,6 +269,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     border: #e02c6d solid 3px;
+    margin-right: 100px;
   }
 
   .logoSection {
@@ -464,6 +465,12 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 350px) {
+  body {
     justify-content: center;
   }
 }
