@@ -232,7 +232,7 @@ footer {
   font-weight: bold;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 780px) {
   .topBar {
     padding: 10px 50px;
     color: black;
@@ -270,8 +270,7 @@ footer {
   }
 
   .section1 {
-    display: grid;
-    padding: 10px 100px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
   }
@@ -287,9 +286,13 @@ footer {
   }
 
   #section1Paragraph {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     font-family: 'Poppins', sans-serif;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: 600;
+    width: 100%;
   }
 
   .logoSection {
@@ -319,6 +322,14 @@ footer {
     font-family: 'Poppins', sans-serif;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
+    justify-content: center;
+  }
+
+  .popularSectionCard {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font-size: 1.5em;
   }
 
   .creativeSection {
@@ -357,6 +368,7 @@ footer {
   footer {
     left: 0;
     bottom: 0;
+    width: 90%;
     background-color: rgb(21, 18, 36);
     color: white;
     text-align: center;
@@ -370,14 +382,13 @@ footer {
   }
 }
 
-@media (min-width: 701px) and (max-width: 1200px) {
+@media (min-width: 781px) and (max-width: 1200px) {
   .topBar {
     color: black;
     background-color: #e02c6d;
     text-decoration: none;
     text-align: center;
     justify-content: center;
-
     font-family: 'Poppins', sans-serif;
   }
   .topBarMenuDiv {
@@ -436,6 +447,13 @@ footer {
     grid-gap: 30px;
   }
 
+  .popularSectionCard {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font-size: 2em;
+  }
+
   .creativeSection {
     padding: 10px 100px;
 
@@ -470,6 +488,7 @@ footer {
   }
 
   footer {
+    width: 90%;
     left: 0;
     bottom: 0;
     background-color: rgb(21, 18, 36);
